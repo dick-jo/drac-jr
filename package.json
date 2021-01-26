@@ -1,0 +1,11 @@
+{
+    "name": "drac-jr",
+    "version": "0.2.0",
+    "description": "Itty bitty dark mode handler",
+    "main": "drac-jr.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Dick Jones",
+    "license": "ISC"
+}
