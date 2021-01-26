@@ -1,7 +1,11 @@
 # Drac Jr.
-An itty bitty dark mode handler
+An itty bitty web design tool for handling dark mode the right way
 
-Drac Jr works via CSS Data Attributes allowing for dark mode styling using the `[data-theme=dark]` selector
+* Absolutely no bloat
+* 100% vanilla
+* No opinionated button/switch element - set `onClick={ToggleDark}` wherever you want
+* No smoke and mirrors - set actual dark mode values in css via the `[data-theme=dark]` data attribute selector
+* No blend-mode voodoo - keep all resultant colours completely predictable and explicitly defined
 
 ## Quick install:
 
@@ -23,4 +27,26 @@ Drac Jr works via CSS Data Attributes allowing for dark mode styling using the `
     <button onClick={ToggleDark}>Dark Mode</button>
 
 Every time a toggle is triggered, preference is saved via `localStorage.setItem()`
+
+### 3. Apply your dark styles
+    [data-theme=dark] body {
+        background-folor: #424242;
+    }
+
+...or if you really want to do things the right way:
+    
+    --text: black;
+    --background: white;
+    --dark-text: white;
+    --dark-background: black;
+    
+    [data-theme="dark] {
+        --text: var(--dark-text);
+        --background: var(--dark-background);
+    }
+    
+    body {
+        color: var(--text);
+        background-color: var(--background);
+    }
     
