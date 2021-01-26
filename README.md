@@ -30,7 +30,7 @@ Every time a toggle is triggered, preference is saved via `localStorage.setItem(
 
 ### 3. Apply your dark styles
     [data-theme=dark] body {
-        background-folor: #424242;
+        background-color: #424242;
     }
 
 ...or if you really want to do things the right way:
