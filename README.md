@@ -17,7 +17,7 @@ Drac Jr works via CSS Data Attributes allowing for dark mode styling using the `
         return ...
     
 `DracJr()` runs an initial check to see whether the user has previously saved a preference with you.
-...if not, the `(prefers-color-scheme: dark)` query is checked and OS/browser level preferencee applied
+...if not, the `(prefers-color-scheme: dark)` query is checked and OS/browser level preference applied
 
 ### 2. Add a light/dark toggle
     <button onClick={ToggleDark}>Dark Mode</button>
