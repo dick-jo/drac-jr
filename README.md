@@ -3,6 +3,8 @@ An itty bitty web design tool for handling dark mode the right way
 
 * Absolutely no bloat
 * 100% vanilla
+* Checks user light/dark preference at OS/browser level
+* Automatically saves preference for future visits
 * No opinionated button/switch element - set `onClick={ToggleDark}` wherever you want
 * No smoke and mirrors - set actual dark mode values in css via the `[data-theme=dark]` data attribute selector
 * No blend-mode voodoo - keep all resultant colours completely predictable and explicitly defined
