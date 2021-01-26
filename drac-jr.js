@@ -28,7 +28,6 @@ const DracJr = () => {
 // Handle toggle via click
 
 export const ToggleDark = () => {
-    console.log("toggle triggered")
 
     if (document.documentElement.getAttribute('data-theme') === 'dark') {
         document.documentElement.setAttribute('data-theme', 'light')
