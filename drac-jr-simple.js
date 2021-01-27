@@ -1,11 +1,8 @@
 // Identical to drac-jr.js, but without exports/imports for absolutely simplicity
-
-console.log("pre drac")
 const DracJr = () => {
-    console.log("Drac initiating")
-        // Initial check for previously indicated dark/light preference
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)"); // ...if user has never indicated preference here before, checks OS/Browser for dark/light preference
-
+    // Initial check for previously indicated dark/light preference
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+    // ...if user has never indicated preference here before, checks OS/Browser for dark/light preference
     const savedTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
     if (savedTheme) {
@@ -22,14 +19,12 @@ const DracJr = () => {
                 localStorage.setItem('theme', 'light');
             }
         };
-
         window.onload = setDataTheme()
     }
-}; // Handle toggle via click
+};
 
-
+// Handle toggle via click
 const ToggleDark = () => {
-    console.log("toggle")
     if (document.documentElement.getAttribute('data-theme') === 'dark') {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');

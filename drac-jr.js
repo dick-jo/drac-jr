@@ -7,7 +7,6 @@ const DracJr = () => {
 
     if (savedTheme) {
         document.documentElement.setAttribute('data-theme', savedTheme)
-
     } else {
         // Check for system preference and save for future
         // ...currently somewhat of a workaround to avoid flash of unstyled content on page load for dark users
@@ -20,15 +19,12 @@ const DracJr = () => {
                 localStorage.setItem('theme', 'light')
             }
         }
-
         window.onload = setDataTheme()
     }
 }
 
 // Handle toggle via click
-
 export const ToggleDark = () => {
-
     if (document.documentElement.getAttribute('data-theme') === 'dark') {
         document.documentElement.setAttribute('data-theme', 'light')
         localStorage.setItem('theme', 'light')
