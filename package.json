@@ -1,6 +1,6 @@
 {
     "name": "drac-jr",
-    "version": "0.3.4",
+    "version": "0.3.5",
     "description": "Itty bitty dark mode handler",
     "main": "drac-jr.js",
     "scripts": {
