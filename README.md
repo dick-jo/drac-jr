@@ -13,6 +13,10 @@ An itty bitty web design tool for handling dark mode the right way
 
 `npm install drac-jr`
 
+...or just copy `dist/drac-jr.js' 
+
+If you're using React, Node etc. then the `src` version is totally fine. Otherwise the `dist` version should be solid.
+
 ## How to use:
 ### 0. import DracJr
     import DracJr, { ToggleDark } from "drac-jr"
@@ -22,12 +26,17 @@ An itty bitty web design tool for handling dark mode the right way
         
         return ...
     
+...or for simple/vanilla browser setups:
+    <script src="./drac-jr.js"></script>    
+
 `DracJr()` runs an initial check to see whether the user has previously saved a preference with you.
 ...if not, the `(prefers-color-scheme: dark)` query is checked and OS/browser level preference applied
 
 ### 2. Add a light/dark toggle
-    <button onClick={ToggleDark}>Dark Mode</button>
-
+    <button onClick={ToggleDark}>Lights out</button>
+    
+...or for simple/vanilla browser setups:
+    <button onclick="ToggleDark()">Lights out</button>
 Every time a toggle is triggered, preference is saved via `localStorage.setItem()`
 
 ### 3. Apply your dark styles
