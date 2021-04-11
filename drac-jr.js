@@ -2,7 +2,7 @@
 const DracJr = () => {
     // Initial check for previously indicated dark/light preference
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)")
-        // ...if user has never indicated preference here before, checks OS/Browser for dark/light preference
+    // ...if user has never indicated preference here before, checks OS/Browser for dark/light preference
     const savedTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null
 
     if (savedTheme) {
