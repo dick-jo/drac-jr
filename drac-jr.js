@@ -1,5 +1,5 @@
-// Just run DracJr() to perform the initial check + set
-const DracJr = () => {
+// Just run dracJr() to perform the initial check + set
+const dracJr = () => {
     // Initial check for previously indicated dark/light preference
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)")
     // ...if user has never indicated preference here before, checks OS/Browser for dark/light preference
@@ -24,7 +24,7 @@ const DracJr = () => {
 }
 
 // Handle toggle via click
-export const ToggleDark = () => {
+export const toggleDark = () => {
     if (document.documentElement.getAttribute('data-theme') === 'dark') {
         document.documentElement.setAttribute('data-theme', 'light')
         localStorage.setItem('theme', 'light')
@@ -33,5 +33,3 @@ export const ToggleDark = () => {
         localStorage.setItem('theme', 'dark')
     }
 }
-
-export default DracJr

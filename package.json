@@ -1,11 +1,23 @@
 {
     "name": "drac-jr",
-    "version": "0.3.8",
+    "version": "0.4.0",
     "description": "Itty bitty dark mode handler",
     "main": "drac-jr.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Dick Jones",
-    "license": "ISC"
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dick-jo/drac-jr.git"
+    },
+    "keywords": [
+        "dark",
+        "mode"
+    ],
+    "bugs": {
+        "url": "https://github.com/dick-jo/drac-jr/issues"
+    },
+    "homepage": "https://github.com/dick-jo/drac-jr#readme"
 }
