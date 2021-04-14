@@ -24,7 +24,7 @@ const dracJr = () => {
 }
 
 // Handle toggle via click
-export const toggleDark = () => {
+const toggleDark = () => {
     if (document.documentElement.getAttribute('data-theme') === 'dark') {
         document.documentElement.setAttribute('data-theme', 'light')
         localStorage.setItem('theme', 'light')
